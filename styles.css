@@ -1,7 +1,7 @@
 body{
     margin:0px;
     padding:0px;
-    background-image: url(/imgs/horizontal.jpg);
+    background-image: url(./imgs/horizontal.jpg);
     background-position: center;
     background-size: cover;
     overflow-x: hidden
@@ -103,7 +103,7 @@ h2 {
   .form-container {
       position: absolute;
       top: 200px;
-      right: 100px;
+      right: 117px;
   }
 }
 .category{
@@ -171,7 +171,7 @@ input:focus{
     .submitButton {
         position: absolute;
         top: 190px;
-        right:293px;
+        right:276px;
         color: rgb(190, 139, 71);
     }
   }
