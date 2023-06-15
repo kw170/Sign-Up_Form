@@ -143,10 +143,14 @@ h2 {
   input:hover{
     background-color: rgb(214, 214, 214);
     border-color:rgb(214,214,214)
+
   }
 
   input:focus{
+    outline: none;
+    border-radius: 4px;
     background-color: white;
+    border-color: rgb(184, 148, 29)
   }
 
   /* SUBMIT BUTTON */
@@ -180,7 +184,7 @@ h2 {
   }
 
   .submitButton:hover{
-    color:rgb(114, 74, 21);;
+    color:rgb(114, 74, 21);
   }
 
 
