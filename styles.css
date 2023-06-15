@@ -4,7 +4,6 @@ body{
     background-image: url(/imgs/horizontal.jpg);
     background-position: center;
     background-size: cover;
-
     overflow-x: hidden
 }
 .container{
@@ -12,10 +11,9 @@ body{
     flex-wrap: wrap;
     height: 100vh;
     width:100vw;
-
 }
 
-
+/* Title and catch phrase */
 #breakPoint {
   font-size: 60px;
   text-align: center;
@@ -30,6 +28,7 @@ body{
     top: 0px;
   }
 }
+
 h2 {
   font-size: 16px;
   position: absolute;
@@ -43,6 +42,7 @@ h2 {
     top: 87px;
   }
 }
+
 .left-side{
     display: flex;
     justify-content: center;
@@ -60,6 +60,7 @@ h2 {
   }
 
 
+/* Right Side Container */
 .right-side{
     display: flex;
     flex-direction: column;
@@ -74,25 +75,55 @@ h2 {
 
   }
 
+  /* Getting Started */
+#title{
+  font-size:20px;
+  display: flex;
+  justify-content:flex-start;
+  margin-left:15px;
+  color:rgb(190, 139, 71);
+}
 
+@media (min-width: 1100px) {
+  #title {
+      position: absolute;
+      top: 110px;
+      right: 340px;
+  }
+}
+
+
+/* Form */
+.form-container{
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1100px) {
+  .form-container {
+      position: absolute;
+      top: 200px;
+      right: 100px;
+  }
+}
 .category{
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     width:50%;
-
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
 }
+
 .form{
     color:black;
     display: flex;
     flex-direction: column;
     align-items: center;    
 }
+
 @media (min-width: 1100px) {
     .form {
         color:white;
@@ -100,58 +131,27 @@ h2 {
 }
 
 
-
-
-.form-container{
-    display: flex;
-    justify-content: center;
+/* Input Boxes */
+input{
+  padding:4px 10px;
+  border-radius: 3px;
+  margin: 4px 20px 10px 0px;
+  border:solid;
+  border-color: white;
+  font-family:'Times New Roman', Times, serif
+}
+input:hover{
+  background-color: rgb(214, 214, 214);
+  border-color:rgb(214,214,214)
 }
 
-
-
-#title{
-    font-size:20px;
-    display: flex;
-    justify-content:flex-start;
-    margin-left:15px;
-    color:rgb(190, 139, 71);
+input:focus{
+  outline: none;
+  border-radius: 4px;
+  background-color: white;
+  border-color: rgb(184, 148, 29);
 }
 
-@media (min-width: 1100px) {
-    #title {
-        position: absolute;
-        top: 110px;
-        right: 340px;
-    }
-}
-
-@media (min-width: 1100px) {
-    .form-container {
-        position: absolute;
-        top: 200px;
-        right: 100px;
-    }
-  }
-
-  input{
-    padding:4px 10px;
-    border-radius: 3px;
-    margin: 4px 20px 10px 0px;
-    border:solid;
-    border-color: white;
-  }
-  input:hover{
-    background-color: rgb(214, 214, 214);
-    border-color:rgb(214,214,214)
-
-  }
-
-  input:focus{
-    outline: none;
-    border-radius: 4px;
-    background-color: white;
-    border-color: rgb(184, 148, 29)
-  }
 
   /* SUBMIT BUTTON */
   .submitButton{
@@ -188,8 +188,7 @@ h2 {
   }
 
 
-
-/* Already have an accoung log in section */
+/* Already have an account log in section */
   .login{
     color:black;
     display: inline-block;
@@ -203,6 +202,8 @@ h2 {
         right:19px;
     }
   }
+
+  /* Log In Link */
   a{
     color:rgb(190, 139, 71);
     text-decoration: none;

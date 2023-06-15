@@ -1,2 +1,3 @@
 # Sign-Up_Form
-Creating a sign up form using only css and html
+Created a sign up form using css and html
+with js for form validation and window resizing
